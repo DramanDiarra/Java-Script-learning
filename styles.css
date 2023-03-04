@@ -1,0 +1,13 @@
+#randomTableData {
+  border: 1px solid black;
+  margin: 20px;
+  width: calc(100% - 40px);
+  /*automatyczne dostosowanie szerokości tabeli z uwzględnieniem marginesów*/
+  text-align: center;
+  transition: all 1s;
+}
+
+.us {
+  color: red;
+  background-color: yellow;
+}
