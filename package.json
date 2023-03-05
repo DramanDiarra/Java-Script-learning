@@ -20,6 +20,7 @@
   "dependencies": {
     "chrome": "^0.1.0",
     "chromedriver": "^110.0.0",
+    "jsdom": "^21.1.0",
     "selenium": "^2.20.0",
     "selenium-webdriver": "^4.8.1"
   }
