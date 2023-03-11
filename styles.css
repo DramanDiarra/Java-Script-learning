@@ -11,3 +11,14 @@
   color: red;
   background-color: yellow;
 }
+
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+tr:hover {
+  color: blue;
+  cursor: pointer;
+  transition: all 1s;
+}
