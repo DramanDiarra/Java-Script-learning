@@ -12,151 +12,7 @@ const scrapingSelectors = {
   selector3: "#kandydaci > section > div > p > span > span",
 };
 
-const urls = [
-  //poniżej 7 lat
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141257",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141219",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141221",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141223",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141225",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141227",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141229",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141231",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141233",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141235",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141237",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141239",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141241",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141243",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141245",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141247",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141249",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141251",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141253",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141259",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141261",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141263",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015735/?groupId=141265",
-  },
-  //powyżej 7 lat
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141171",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141173",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141175",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141177",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141179",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141181",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141183",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141185",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141187",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141189",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141191",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141193",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141195",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141197",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141199",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141201",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141203",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141205",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141207",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141209",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141211",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141213",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141215",
-  },
-  {
-    url: "https://dzienniklodzki.pl/p/kandydaci/ona-i-on%2C1015737/?groupId=141217",
-  },
-];
+const urls = JSON.parse(fs.readFileSync("config/urls.json"));
 
 // Przekazywac z funkcji do funkcji, a nie definiowac na zewnatrz
 async function WebScrapingLocalTest(driver, lp) {
@@ -228,12 +84,43 @@ function sortTableByVotes(scrapingData) {
   return sorted;
 }
 
-renderTable(sortTableByVotes(await generateArray()));
-setInterval(
-  async () => renderTable(sortTableByVotes(await generateArray())),
-  300000
-);
+// renderTable(sortTableByVotes(await generateArray()));
+// setInterval(
+//   async () => renderTable(sortTableByVotes(await generateArray())),
+//   300000
+// );
 
 // const scrapingData = generateArray();
 // const sorted = sortTableByVotes(scrapingData);
 // renderTable(sorted);
+
+/* 
+  SERVER
+*/
+
+import http from "http";
+import getReqData from "./utils/getReqData.js";
+
+const server = http.createServer(async (req, res) => {
+  if (req.url === "/config/urls" && req.method === "GET") {
+    res.writeHead(200, { "Content-Type": "application/json" });
+    res.end(JSON.stringify(urls));
+  }
+
+  /*
+    Task: Add POST method to /config/urls to allow user adding
+    new url to urls.json file
+  */
+
+  if (req.url === "/config/selectors" && req.method === "POST") {
+    const data = await getReqData(req);
+    console.log(JSON.parse(data));
+
+    res.writeHead(201, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({ MESSAGES: "Added new resource" }));
+  }
+});
+
+server.listen(3000, () => {
+  console.log("Server is listening on port", 3000);
+});
